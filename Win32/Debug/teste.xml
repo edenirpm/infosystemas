@@ -1,0 +1,17 @@
+<CLIENTE>
+	<Email>edenirpm@gmail.com</Email>
+	<CPF>06980086693</CPF>
+	<Identidade>22699713</Identidade>
+	<Nome>Edenir Pereira Martins</Nome>
+	<Endereco>
+		<Logradouro>Rua Jacuípe</Logradouro>
+		<Bairro>Concórdia</Bairro>
+		<UF>MG</UF>
+		<Cep>31110720</Cep>
+		<Numero>147</Numero>
+		<Localidade>Belo Horizonte</Localidade>
+		<Complemento>Casa</Complemento>
+		<Pais>Brasil</Pais>
+	</Endereco>
+	<Telefone>31991770674</Telefone>
+</CLIENTE>

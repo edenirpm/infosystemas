@@ -1,0 +1,387 @@
+object ViewPrincipal: TViewPrincipal
+  Left = 0
+  Top = 0
+  Caption = 'Formul'#225'rio de Cadastro com envio de e-mail'
+  ClientHeight = 561
+  ClientWidth = 905
+  Fill.Kind = Solid
+  Position = ScreenCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  OnShow = FormShow
+  DesignerMasterStyle = 0
+  object LayoutPrincipal: TLayout
+    Align = Client
+    Size.Width = 905.000000000000000000
+    Size.Height = 561.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object LayoutTop: TLayout
+      Align = Top
+      Size.Width = 905.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object Rectangle2: TRectangle
+        Align = Client
+        Fill.Color = xFFCA7103
+        Size.Width = 905.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+        object Text2: TText
+          Align = Client
+          Size.Width = 905.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Cadastro de Cliente - Teste Edenir P.Martins'
+          TextSettings.Font.Size = 18.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.FontColor = claWhite
+        end
+        object ShadowEffect1: TShadowEffect
+          Distance = 3.000000000000000000
+          Direction = 45.000000000000000000
+          Softness = 0.300000011920929000
+          Opacity = 0.600000023841857900
+          ShadowColor = claBlack
+        end
+      end
+    end
+    object LayoutBottom: TLayout
+      Align = Bottom
+      Position.Y = 538.000000000000000000
+      Size.Width = 905.000000000000000000
+      Size.Height = 23.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+    end
+    object LayoutCenter: TLayout
+      Align = Client
+      Size.Width = 905.000000000000000000
+      Size.Height = 488.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      object LayoutContentAll: TLayout
+        Align = Client
+        Size.Width = 624.000000000000000000
+        Size.Height = 488.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object GroupDados: TGroupBox
+          Align = Top
+          StyledSettings = [Family, Size, Other]
+          Margins.Left = 20.000000000000000000
+          Margins.Top = 20.000000000000000000
+          Margins.Right = 20.000000000000000000
+          Position.X = 20.000000000000000000
+          Position.Y = 20.000000000000000000
+          Size.Width = 584.000000000000000000
+          Size.Height = 141.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Dados Pessoais'
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.FontColor = xFFF28704
+          TabOrder = 0
+          object edtNome: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            TabOrder = 0
+            Position.X = 24.000000000000000000
+            Position.Y = 40.000000000000000000
+            Size.Width = 305.000000000000000000
+            Size.Height = 22.000000000000000000
+            Size.PlatformDefault = False
+            TextPrompt = 'Nome do Cliente'
+          end
+          object Label1: TLabel
+            Position.X = 24.000000000000000000
+            Position.Y = 16.000000000000000000
+            Text = 'Nome'
+            TabOrder = 1
+          end
+          object Label2: TLabel
+            Position.X = 344.000000000000000000
+            Position.Y = 16.000000000000000000
+            Text = 'Identidade'
+            TabOrder = 2
+          end
+          object Label3: TLabel
+            Position.X = 456.000000000000000000
+            Position.Y = 16.000000000000000000
+            Text = 'CPF'
+            TabOrder = 3
+          end
+          object Label4: TLabel
+            Position.X = 24.000000000000000000
+            Position.Y = 72.000000000000000000
+            Text = 'Telefone'
+            TabOrder = 4
+          end
+          object Label5: TLabel
+            Position.X = 144.000000000000000000
+            Position.Y = 72.000000000000000000
+            Text = 'E-Mail'
+            TabOrder = 5
+          end
+          object edtIdentidade: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            TabOrder = 6
+            FilterChar = '1234567890'
+            Position.X = 344.000000000000000000
+            Position.Y = 40.000000000000000000
+            TextPrompt = 'N. Identidade'
+          end
+          object edtCPF: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            TabOrder = 7
+            FilterChar = '1234567890'
+            Position.X = 456.000000000000000000
+            Position.Y = 40.000000000000000000
+            Size.Width = 105.000000000000000000
+            Size.Height = 22.000000000000000000
+            Size.PlatformDefault = False
+            TextPrompt = 'N. CPF'
+          end
+          object edtTelefone: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            TabOrder = 8
+            FilterChar = '1234567890'
+            Position.X = 24.000000000000000000
+            Position.Y = 96.000000000000000000
+            Size.Width = 105.000000000000000000
+            Size.Height = 22.000000000000000000
+            Size.PlatformDefault = False
+            TextPrompt = 'N. Telefone'
+          end
+          object edtEmail: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            TabOrder = 9
+            Position.X = 144.000000000000000000
+            Position.Y = 96.000000000000000000
+            Size.Width = 417.000000000000000000
+            Size.Height = 22.000000000000000000
+            Size.PlatformDefault = False
+            TextPrompt = 'Endere'#231'o de E-mail'
+          end
+        end
+        object GroupEndereco: TGroupBox
+          Align = Top
+          StyledSettings = [Family, Size, Other]
+          Margins.Left = 20.000000000000000000
+          Margins.Right = 20.000000000000000000
+          Margins.Bottom = 20.000000000000000000
+          Position.X = 20.000000000000000000
+          Position.Y = 161.000000000000000000
+          Size.Width = 584.000000000000000000
+          Size.Height = 248.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Endere'#231'o'
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.FontColor = xFFF28704
+          TabOrder = 1
+          object Label6: TLabel
+            Position.X = 24.000000000000000000
+            Position.Y = 16.000000000000000000
+            Text = 'CEP'
+            TabOrder = 0
+          end
+          object Label7: TLabel
+            Position.X = 24.000000000000000000
+            Position.Y = 56.000000000000000000
+            Text = 'Logradouro'
+            TabOrder = 1
+          end
+          object Label8: TLabel
+            Position.X = 296.000000000000000000
+            Position.Y = 56.000000000000000000
+            Text = 'N'#250'mero'
+            TabOrder = 2
+          end
+          object Label9: TLabel
+            Position.X = 24.000000000000000000
+            Position.Y = 112.000000000000000000
+            Text = 'Bairro'
+            TabOrder = 3
+          end
+          object Label10: TLabel
+            Position.X = 296.000000000000000000
+            Position.Y = 112.000000000000000000
+            Text = 'Cidade'
+            TabOrder = 4
+          end
+          object Label11: TLabel
+            Position.X = 368.000000000000000000
+            Position.Y = 56.000000000000000000
+            Text = 'Complemento'
+            TabOrder = 5
+          end
+          object Label12: TLabel
+            Position.X = 24.000000000000000000
+            Position.Y = 168.000000000000000000
+            Text = 'Estado'
+            TabOrder = 6
+          end
+          object Label13: TLabel
+            Position.X = 296.000000000000000000
+            Position.Y = 168.000000000000000000
+            Text = 'Pa'#237's'
+            TabOrder = 7
+          end
+          object edtCep: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            TabOrder = 8
+            Position.X = 24.000000000000000000
+            Position.Y = 32.000000000000000000
+            Size.Width = 145.000000000000000000
+            Size.Height = 22.000000000000000000
+            Size.PlatformDefault = False
+            TextPrompt = 'Digite o CEP'
+            OnChangeTracking = edtCepChangeTracking
+          end
+          object edtLogradouro: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            TabOrder = 9
+            Position.X = 24.000000000000000000
+            Position.Y = 80.000000000000000000
+            Size.Width = 241.000000000000000000
+            Size.Height = 22.000000000000000000
+            Size.PlatformDefault = False
+            TextPrompt = 'Digite o Logradouro'
+          end
+          object edtNumero: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            TabOrder = 10
+            FilterChar = '1234567890'
+            Position.X = 296.000000000000000000
+            Position.Y = 80.000000000000000000
+            Size.Width = 57.000000000000000000
+            Size.Height = 22.000000000000000000
+            Size.PlatformDefault = False
+          end
+          object edtComplemento: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            TabOrder = 11
+            Position.X = 368.000000000000000000
+            Position.Y = 80.000000000000000000
+            Size.Width = 185.000000000000000000
+            Size.Height = 22.000000000000000000
+            Size.PlatformDefault = False
+            TextPrompt = 'Ex.: Casa / AP'
+          end
+          object edtBairro: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            TabOrder = 12
+            Position.X = 24.000000000000000000
+            Position.Y = 136.000000000000000000
+            Size.Width = 257.000000000000000000
+            Size.Height = 22.000000000000000000
+            Size.PlatformDefault = False
+            TextPrompt = 'Nome do Bairro'
+          end
+          object edtCidade: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            TabOrder = 13
+            Position.X = 296.000000000000000000
+            Position.Y = 136.000000000000000000
+            Size.Width = 257.000000000000000000
+            Size.Height = 22.000000000000000000
+            Size.PlatformDefault = False
+            TextPrompt = 'Nome da Cidade'
+          end
+          object edtEstado: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            TabOrder = 14
+            Position.X = 24.000000000000000000
+            Position.Y = 192.000000000000000000
+            Size.Width = 241.000000000000000000
+            Size.Height = 22.000000000000000000
+            Size.PlatformDefault = False
+            TextPrompt = 'Sigla do Estado'
+          end
+          object edtPais: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            TabOrder = 15
+            Position.X = 296.000000000000000000
+            Position.Y = 192.000000000000000000
+            Size.Width = 257.000000000000000000
+            Size.Height = 22.000000000000000000
+            Size.PlatformDefault = False
+            TextPrompt = 'Nome do Pa'#237's'
+          end
+        end
+        object Rectangle1: TRectangle
+          Align = Top
+          Fill.Color = xFFF28704
+          Margins.Left = 20.000000000000000000
+          Margins.Right = 20.000000000000000000
+          Position.X = 20.000000000000000000
+          Position.Y = 429.000000000000000000
+          Size.Width = 584.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+          XRadius = 10.000000000000000000
+          YRadius = 10.000000000000000000
+          object Text1: TText
+            Align = Client
+            Size.Width = 584.000000000000000000
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'Cadastrar'
+            TextSettings.Font.Size = 18.000000000000000000
+            TextSettings.FontColor = claWhite
+            OnClick = Text1Click
+          end
+        end
+      end
+      object LayoutRight: TLayout
+        Align = Right
+        Position.X = 624.000000000000000000
+        Size.Width = 281.000000000000000000
+        Size.Height = 488.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object ListView1: TListView
+          ItemAppearanceClassName = 'TDynamicAppearance'
+          ItemEditAppearanceClassName = 'TDynamicAppearance'
+          HeaderAppearanceClassName = 'TListHeaderObjects'
+          FooterAppearanceClassName = 'TListHeaderObjects'
+          Align = Client
+          Margins.Top = 27.000000000000000000
+          Margins.Right = 20.000000000000000000
+          Size.Width = 261.000000000000000000
+          Size.Height = 461.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          ItemAppearance.ItemHeight = 50
+          ItemAppearanceObjects.ItemObjects.ObjectsCollection = <
+            item
+              AppearanceObjectName = 'Name'
+              AppearanceClassName = 'TTextObjectAppearance'
+              Appearance.TextAlign = Leading
+              Appearance.TextColor = claDarkorange
+              Appearance.PlaceOffset.X = 10.000000000000000000
+              Appearance.PlaceOffset.Y = -10.000000000000000000
+            end
+            item
+              AppearanceObjectName = 'Email'
+              AppearanceClassName = 'TTextObjectAppearance'
+              Appearance.TextAlign = Leading
+              Appearance.TextVertAlign = Trailing
+              Appearance.PlaceOffset.X = 10.000000000000000000
+              Appearance.PlaceOffset.Y = -5.000000000000000000
+            end>
+          ItemAppearanceObjects.ItemEditObjects.ObjectsCollection = <
+            item
+              AppearanceObjectName = 'Text1'
+              AppearanceClassName = 'TTextObjectAppearance'
+            end>
+          SearchVisible = True
+        end
+      end
+    end
+  end
+end
