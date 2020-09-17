@@ -135,6 +135,7 @@ var
 begin
   LControllerCadastro := TControllerCadastro.create;
   LControllerCadastro.Email.setHost(satDefault, 465, 'smtp.gmail.com',
+    
     'user@gmailcom', 'passgmail').setMessage('edenirpm@gmail.com',
     'Edenir P. Martins', pDestinatario, 'Dados do cliente cadastrado em Anexo')
     .send('Segue em anexo os dados do cliente cadastrado.', 'teste.xml');
